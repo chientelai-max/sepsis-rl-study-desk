@@ -1,0 +1,77 @@
+[
+  {
+    "id": "2018-ai-clinician",
+    "year": 2018,
+    "title": "AI Clinician：敗血症的序列決策起點",
+    "original": "The Artificial Intelligence Clinician learns optimal treatment strategies for sepsis in intensive care",
+    "authors": "Komorowski et al.",
+    "journal": "Nature Medicine",
+    "doi": "10.1038/s41591-018-0213-5",
+    "tag": "基礎研究",
+    "scope": "摘要層級導讀；方法細節與圖表待全文核對",
+    "summary": "從狀態、行動與獎勵開始，認識敗血症強化學習。",
+    "state": "病人臨床狀態；完整變數與前處理待全文確認。",
+    "action": "輸液與升壓劑策略；分組與時間間隔待確認。",
+    "reward": "定義與數值待全文核對。",
+    "evaluation": "歷史資料研究；詳細離線評估方法待核對。",
+    "notes": [
+      "敗血症治療涉及連續決策，研究探索由歷史照護資料學習策略。",
+      "研究建立強化學習代理；本筆記未取得全文，不能補寫演算法參數。",
+      "待補：取得原文各圖後，逐張記錄圖號、座標、比較對象、結果及限制。",
+      "【助理解讀】可作為專題中介紹序列決策問題的起點。",
+      "【學習提問】先理解離線策略評估，並檢查未測量混雜與資料支持範圍。",
+      "作者提出以 RL 學習敗血症治療策略；不能據此宣稱前瞻性臨床效益已獲證實。",
+      "為何選擇 RL？獎勵如何定義？歷史資料比較能證明什麼？"
+    ]
+  },
+  {
+    "id": "2025-transportability",
+    "year": 2025,
+    "title": "從 ICU 到急診：模型能直接搬過去嗎？",
+    "original": "Challenges with reinforcement learning model transportability for sepsis treatment in emergency care",
+    "authors": "Nauka et al.",
+    "journal": "npj Digital Medicine",
+    "doi": "10.1038/s41746-025-01485-6",
+    "tag": "臨床適用性",
+    "scope": "正文與圖說導讀；原圖及補充資料待逐項核對",
+    "summary": "先問資料能不能支持模型，再問模型表現好不好。",
+    "state": "檢查急診可取得的臨床特徵及量測頻率。",
+    "action": "研究檢視輸液、升壓劑的紀錄與變異。",
+    "reward": "本篇不是新 RL 策略訓練研究，無新獎勵設定。",
+    "evaluation": "檢查 ICU 模型轉用急診的資料與場域條件。",
+    "notes": [
+      "ICU 模型是否適用於急診，是研究提出的問題。",
+      "以急診敗血症世代檢查資料缺漏、量測頻率、診斷不確定性與治療變異。",
+      "圖 1：缺漏熱圖，區分每小時與累積缺漏；圖 2：診斷條件隨時間累積。表 1：用於理解樣本組成。以上依圖說，未逐項重讀原圖數值。",
+      "【助理解讀】專題可先建立資料可用性表，再決定狀態變數。",
+      "可學習：缺漏分析與時間窗設計；單一醫療體系及較早期資料限制外推。",
+      "作者指出 ICU 模型直接移至急診仍有資料與場域障礙。",
+      "資料未記錄等於未發生嗎？時間窗如何選？換場域要驗證什麼？"
+    ]
+  },
+  {
+    "id": "2026-temporal-alignment",
+    "year": 2026,
+    "title": "差一個時間點：RL 的時間對齊問題",
+    "original": "Off by a beat: the effects of temporal misalignment in reinforcement learning for sepsis treatment",
+    "authors": "待原文確認",
+    "journal": "npj Digital Medicine",
+    "doi": "10.1038/s41746-026-02625-2",
+    "tag": "方法檢查",
+    "scope": "搜尋結果層級導讀；全文、作者與圖表待確認",
+    "summary": "把量測、決策與結果排在正確時間順序，是重要的閱讀問題。",
+    "state": "需核對狀態量測是在治療前還是治療後。",
+    "action": "需確認治療對應哪個時間窗。",
+    "reward": "待全文確認；不可從題名推定。",
+    "evaluation": "需檢查訓練及評估是否共用同一時間偏差。",
+    "notes": [
+      "研究探討敗血症 RL 的時間對齊問題。",
+      "詳細資料、模擬設定及比較方法待全文核對。",
+      "待補：取得全文後逐圖整理，不推測圖中數值。",
+      "【助理解讀】可為專題資料處理增加時間線檢查表。",
+      "【學習提問】是否把治療後資訊用於先前決策？資料切窗是否造成洩漏？",
+      "目前只作待讀導引，尚不提供完整結論。",
+      "狀態在何時可知？行動何時發生？評估是否能揭露時間錯置？"
+    ]
+  }
+]
